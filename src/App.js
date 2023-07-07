@@ -26,7 +26,8 @@ const App = () => {
   ];
 
   const [tableData, setTableData] = useState(data);
-  const [item, setItem] = useState();
+  const [searchedTableDate, setSearchedTableData] = useState([]);
+  const [searchedText, setSearchedText] = useState();
   const [showAddModal, setShowAddModal] = useState(false);
   const [showUpdateModal, setShowUpdateModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -54,12 +55,17 @@ const App = () => {
       return filteredData;
     });
   };
-
+  //search function
   const search = (value) => {
+    setSearchedText(value);
     const reg = new RegExp(value.toLowerCase());
-
-    console.log(reg);
+    const result = tableData.filter((item) => {
+      return item.petName.toLowerCase().match(reg);
+    });
+    setSearchedTableData(result);
   };
+
+  const _tableData = searchedText ? searchedTableDate : tableData;
   return (
     <div className="allui">
       <TopBar />
@@ -69,7 +75,7 @@ const App = () => {
       />
       <Table
         setSelectedVal={setSelectedVal}
-        tableData={tableData}
+        tableData={_tableData}
         handleOnUpdate={(val) => {
           setSelectedVal(val);
           setShowUpdateModal(true);

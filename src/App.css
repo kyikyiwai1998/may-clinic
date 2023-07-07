@@ -1,7 +1,6 @@
 /* .allui {
   border: 3px solid black;
   border-radius: 10px;
-  
 } */
 /* width: 100%; */
 /* height: 100%; */
@@ -14,6 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.topbar-img {
+  margin: 15px;
 }
 .topbar1 img {
   margin-right: 10px;
@@ -34,8 +36,8 @@
   text-align:left;
 } */
 .headclass {
-  border-style: solid;
-  width: 250px;
+  border-style: groove;
+  width: 280px;
   border-radius: 10px;
   /* color: rgba(68, 68, 68, 0.5); */
   color: gray;
@@ -51,7 +53,7 @@
   cursor: pointer;
 }
 .search-icon {
-  margin-left: 40px;
+  margin-left: 65px;
   margin-top: 4px;
 }
 .addbutton {
@@ -112,6 +114,10 @@ th {
   color: #54bab9;
   font-size: 14px;
   font-weight: 400px;
+  padding: 6px;
+}
+td {
+  padding: 6px;
 }
 .more-img {
   cursor: pointer;

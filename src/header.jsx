@@ -1,10 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import search from "./resources/search.png";
-import black_down from "./resources/black_down.png";
-import green_down from "./resources/green_down.png";
 import add from "./resources/add.png";
-import close from "./resources/clear-button.png";
 import "./App.css";
 // import "./Modal.css";
 import Modal from "./Modal";
