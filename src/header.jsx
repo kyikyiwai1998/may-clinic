@@ -14,8 +14,6 @@ const Head = ({ handleOnClick, handleOnSearch }) => {
   const [isOpen, setIsOpen] = useState(false);
   const openAddNewPatientModal = () => {
     setIsOpen(true);
-    console.log("error");
-    console.log("error");
   };
   return (
     <div className="headpart">
