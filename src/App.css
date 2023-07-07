@@ -1,0 +1,152 @@
+/* .allui {
+  border: 3px solid black;
+  border-radius: 10px;
+  
+} */
+/* width: 100%; */
+/* height: 100%; */
+.topbar {
+  background-color: #54bab9;
+  display: flex;
+  justify-content: space-between;
+}
+.topbar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar1 img {
+  margin-right: 10px;
+}
+.headpart {
+  margin: 15px;
+}
+.head {
+  font-size: 22px;
+  font-weight: 400;
+  color: #54bab9;
+}
+/* .search {
+  font-size:14px;
+  font-weight: normal;
+  color:rgba(68, 68, 68, 0.5);
+  border-radius: 15px;
+  text-align:left;
+} */
+.headclass {
+  border-style: solid;
+  width: 250px;
+  border-radius: 10px;
+  /* color: rgba(68, 68, 68, 0.5); */
+  color: gray;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 1px;
+}
+.headclass input {
+  border: none;
+  outline: none;
+}
+.headclass img {
+  cursor: pointer;
+}
+.search-icon {
+  margin-left: 40px;
+  margin-top: 4px;
+}
+.addbutton {
+  background-color: #54bab9;
+  color: white;
+  border-radius: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-color: white;
+}
+.searchadd {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* DROPDOWN */
+
+.flexdropdown select {
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.flexdropdown .maindropdown {
+  display: flex;
+  flex-direction: row;
+  width: 285px;
+  justify-content: space-between;
+}
+.flexdropdown .maindropdown select {
+  width: 120px;
+  text-align: center;
+}
+.flexdropdown .rightdropdown {
+  display: flex;
+  flex-direction: row;
+}
+.flexdropdown .rightdropdown select {
+  text-align: center;
+}
+.flexdropdown {
+  display: flex;
+  justify-content: space-between;
+}
+.table1 {
+  border: 0px solid black;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+}
+tr {
+  border-top: 1px solid rgba(68, 68, 68, 0.5);
+  border-bottom: 1px solid rgba(68, 68, 68, 0.5);
+  font-size: 14px;
+}
+th {
+  color: #54bab9;
+  font-size: 14px;
+  font-weight: 400px;
+}
+.more-img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.editdelete {
+  position: relative;
+}
+.btn {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  /* left: 0; */
+  right: 0;
+}
+.editbutton,
+.delbutton {
+  display: block;
+  color: black;
+  border: 1px solid black;
+  padding: 2px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  /* text-align: center; */
+  text-decoration: none;
+  width: 100px;
+}
+
+.editdelete:hover .btn {
+  display: block;
+}
+.editbutton:hover,
+.delbutton:hover {
+  background-color: #54bab9;
+}
